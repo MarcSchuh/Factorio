@@ -1,0 +1,6 @@
+FACTORIO_PERSISTENCE_LAYER="/path/to/saves_and_mods"
+FACTORIO_USERNAME="Factorio user name - see https://www.factorio.com/login"
+FACTORIO_TOKEN="Token obtained from https://www.factorio.com/profile"
+FACTORIO_INSTANCE_NAME="Fancy name"
+FACTORIO_INSTANCE_DESC="Fancy description"
+FACTORIO_VERSION="2.0.32"

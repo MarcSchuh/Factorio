@@ -1,0 +1,19 @@
+services:
+  factorio:
+    image: factoriotools/factorio:${FACTORIO_VERSION}
+    container_name: factorio
+    env_file:
+      - .env
+    ports:
+      - "34197:34197/udp"
+      - "27015:27015/tcp"
+    volumes:
+      - "${FACTORIO_PERSISTENCE_LAYER}:/factorio"
+    restart: unless-stopped
+    environment:
+      UPDATE_MODS_ON_START: "true"
+      USERNAME: "${FACTORIO_USERNAME}"
+      TOKEN: "${FACTORIO_TOKEN}"
+      INSTANCE_NAME: "${FACTORIO_INSTANCE_NAME}"
+      INSTANCE_DESC: "${FACTORIO_INSTANCE_DESC}"
+
